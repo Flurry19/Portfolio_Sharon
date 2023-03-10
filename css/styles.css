@@ -24,6 +24,13 @@
   width: 100vw;
 }
 
+.bigimageproject3{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+
 .hometitle {
   font-size: 4em;
   text-align: center;
