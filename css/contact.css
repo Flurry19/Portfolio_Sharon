@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background: url('https://flurry19.github.io/Betere-foto/1636298034980.jpg');
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.hometitle {
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 45px;
+    font-family: 'Times New Roman';
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(48, 48, 195, 1) 46%, rgba(0, 212, 255, 1) 100%);
+}
+
+h2 {
+    font-size: 2em;
+    color: black;
+    font-family: Calibri;
+    font-style: italic;
+}
+
+nav {
+    font-size: 1.3em;
+    display: flex;
+    font-family: 'Franklin Gothic Medium';
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    border-right: 1px solid whitesmoke;
+
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+.nav-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    text-align: center;
+    z-index: 1;
+
+}
+
+form input {
+    font-size: 1em;
+    font-family: "Calibri";
+}
+
+form input[type=date] {
+    text-align: center;
+}
+
+form input[type=text] {
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+input[type=submit] {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    cursor: pointer;
+    width: 97%;
+}
+
+input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+.formField {
+    padding: 10px;
+    font-family: "Calibri";
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+input:invalid {
+    border: 3px solid red;
+    background-color: rgb(252, 161, 161);
+}
+
+input:valid {
+    border: 3px solid green;
+    background-color: rgb(162, 237, 162);
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    margin-block-end: 40px;
+}
+
+h3 {
+    font-family: Calibri;
+    font-size: 1.8em;
+    margin-left: 10%;
+    font-style: italic;
+    padding: 10px;
+}
+
+.social-container {
+    padding: 20px;
+    height: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons:hover {
+    opacity: 0.7;
+}
+
+.instagram {
+    height: 50px;
+    width: 90px;
+}
+
+.etsy {
+    height: 45px;
+    width: 45px;
+    border-radius: 20%;
+}
+
+.facebook {
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    border-radius: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .hometitle {
+        font-size: 2.5em;
+        margin-top: 80px
+    }
+
+    #home {
+        width: 100%;
+        height: 100vw;
+    }
+
+    nav {
+        font-size: 0.9em;
+        margin-top: 0px;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: black;
+    }
+
+    nav a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .nav-container {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

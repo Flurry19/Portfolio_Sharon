@@ -1,1 +1,136 @@
-testen
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <script src="js/chat.js"></script>
+
+<body>
+  <!-- Chatbox -->
+  <button class="open-button" onclick="openForm()">Chat</button>
+  <section class="chat-popup" id="myForm">
+    <form action="mailto:sharonirenedewit@gmail.com" method="phost" class="form-container">
+      <h1>Chat</h1>
+      <label for="msg"><b>Bericht:</b></label>
+      <textarea placeholder="Type hier" name="msg" required></textarea>
+      <button type="submit" class="submit btn">Verstuur</button>
+      <button type="button" class="close btn" onclick="closeForm()">Sluiten</button>
+    </form>
+  </section>
+  <!-- Homepage -->
+  <section class="bigimage" id="home">
+    <h2 class="hometitle"> Sharon de Wit </h2>
+    <!-- Begin Navigation -->
+    <nav>
+      <!-- Begin Section -->
+      <section class="nav-container">
+        <a href="#home">Home</a>
+        <a href="#overmij">Over mij</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#hobby">Hobby's</a>
+        <a href="contact.html#contact">Contact</a>
+      </section>
+    </nav>
+  </section>
+  <!--Begin Header-->
+  <header>
+    <!-- Begin Section -->
+    <section class="container">
+      <h2 id="overmij">Over mij</h2>
+      <p>Ik ben 20 jaar oud en studeer op dit moment <strong> Creative Media & Game Technologies </strong> aan de
+        hogeschool van Rotterdam. Ik heb twee katten en woon in Pijnacker. Ik werk voor een horeca uitzendbureau,
+        verzorg
+        dagelijks honden en katten en heb een <a
+          href="https://www.etsy.com/nl/shop/Nerdyglazen?ref=seller-platform-mcnav">eigen Etsy bedrijf</a>.</p>
+      <figure>
+        <img src="images/Levy.JPG" alt="Kat-Levy">
+        <img src="images/Storm.JPG" alt="Kat-Storm">
+        <figcaption>Dit zijn mijn katten Levy en Storm.</figcaption>
+      </figure>
+    </section>
+  </header>
+  <!-- Begin main -->
+  <main>
+    <!-- Begin Section -->
+    <section class="container">
+      <h2 id="projecten">Projecten</h2>
+      <div class="images-scroll">
+        <div class="fullimage">
+          <a class="block-images" href="nekoclock.html"><img class="block-images" src="images/ProjectCLE1.jpeg"
+              alt="NekoClock afbeelding"></a>
+          <div class="imagetext">NekoClock</div>
+        </div>
+        <div class="fullimage">
+          <a class="block-images" href="CRUDsysteem.html"><img class="block-images"
+              src="images/Screenshot 2023-01-17 204559.jpg" alt="Website voor een hondenschool afbeelding"></a>
+          <div class="imagetext">Hondenschool Website</div>
+        </div>
+        <div class="fullimage">
+          <img class="block-images" src="images/image-coming-soon-placeholder.png" alt="Geen afbeelding">
+          <div class="imagetext">Project 3 coming soon</div>
+        </div>
+      </div>
+    </section>
+    <!-- Begin Section -->
+    <section class="container">
+      <h2 id="skills">Skills</h2>
+      <p>Ik heb een basis skill in javascript, php, html en css. Html en css krijg ik steeds ervaring mee dus daar heb
+        ik de meeste skills in. Ik leer deze talen op school dus vandaar dat ik er steeds verder in groei.</p>
+      </div>
+      </div>
+    </section>
+    <!-- Begin Section -->
+    <section class="container">
+      <h2 id="hobby">Hobby's</h2>
+      <div class="images-scroll">
+        <div class="fullimage">
+          <img class="block-images" src="images/Glazen.jpg" alt="Gegraveerde glazen die ik heb gemaakt">
+          <div class="imagetext">Graveren</div>
+        </div>
+        <div class="fullimage">
+          <img class="block-images" src="images/Tennis.jpg" alt="Ik als tennis kampioen op een jonge leeftijd">
+          <div class="imagetext">Tennis</div>
+        </div>
+        <div class="fullimage">
+          <img class="block-images" src="images/Timon.JPG" alt="Zittende labrador">
+          <div class="imagetext">Hondenfotografie</div>
+        </div>
+        <div class="fullimage">
+          <img class="block-images" src="images/Yoda.JPG" alt="Liggende Britse Korthaar kat">
+          <div class="imagetext">Dieren verzorgen</div>
+        </div>
+        <div class="fullimage">
+          <img class="block-images" src="images/Reyna_smaller.jpg" alt="Reyna van de game Valorant">
+          <div class="imagetext">Gamen</div>
+        </div>
+        <div class="fullimage">
+          <img class="block-images" src="images/archery.png" alt="Boogschiet doel met pijlen erin">
+          <div class="imagetext">Boogschieten</div>
+        </div>
+        <div class="fullimage">
+          <img class="block-images" src="images/Diorama.jpg" alt="Pokémon Diorama met Rowlet die ik heb gemaakt">
+          <div class="imagetext">Creatief bezig zijn</div>
+        </div>
+    </section>
+  </main>
+  <!-- Begin footer -->
+  <footer>
+    <h3 id="socials">Socials</h2>
+      <section class="social-container">
+        <a class="icons" href="https://www.instagram.com/databaseofdoggos/"><img src="images/Instagram-Logo.png"
+            class="instagram" alt="Instagram Logo"></a>
+        <a class="icons" href="https://www.etsy.com/nl/shop/Nerdyglazen?ref=seller-platform-mcnav"><img
+            src="images/Etsy-Logo.png" class="etsy" alt="Etsy Logo"></a>
+        <a class="icons" href="https://www.facebook.com/sharon.dewit.7587/"><img
+            src="images/Facebook_icon_2013.svg.webp" class="facebook" alt="Facebook Logo"></a>
+      </section>
+  </footer>
+
+</body>
+
+</html>

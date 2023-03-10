@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/chat.js"></script>
+</head>
+
+<body>
+    <!-- Chatbox -->
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <!-- Begin Section -->
+    <section class="chat-popup" id="myForm">
+        <form action="mailto:sharonirenedewit@gmail.com" method="phost" class="form-container">
+            <h1>Chat</h1>
+            <label for="msg"><b>Bericht:</b></label>
+            <textarea placeholder="Type hier" name="msg" required></textarea>
+            <button type="submit" class="submit btn">Verstuur</button>
+            <button type="button" class="close btn" onclick="closeForm()">Sluiten</button>
+        </form>
+    </section>
+    <!-- Begin Navigation -->
+    <nav>
+        <!-- Begin Section -->
+        <section class="nav-container">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#overmij">Over mij</a>
+            <a href="index.html#projecten">Projecten</a>
+            <a href="index.html#hobby">Hobby's</a>
+            <a href="contact.html#contact">Contact</a>
+        </section>
+    </nav>
+    <!-- Begin Header -->
+    <header>
+        <img class="bigimageproject2" id="home" src="images/Screenshot 2023-01-17 204559.jpg">
+        <h2 class="projecttitle">CRUD-systeem</h2>
+    </header>
+    <!-- Begin Main -->
+    <main>
+        <!-- Begin Section -->
+        <section class="container">
+            <h2>Startproject</h2>
+            <div class="projectcontainer">
+                <img class="catsprint2" src="images/DSC_0359.JPG" alt="Project Kat Sprint 2">
+                <p>Allereerst ben ik op zoek naar een klant gegaan, ik heb iemand gevonden die later een eigen
+                    hondenschool
+                    wilt beginnen en een reserveringssysteem wil hebben zodat hondeneigenaren zelf hun afspraken kunnen
+                    inplannen, ook was het de bedoeling dat er een website omheen werd gebouwd.
+                </p>
+            </div>
+        </section>
+        <!-- Begin Section -->
+        <section class="container">
+            <h2>Functies</h2>
+            <div class="projectcontainer">
+                <h4>Create</h3>
+                    <video controls width="250">
+                        <source src="images/Create.mp4">
+                    </video>
+                    <p>De create pagina is een pagina waarop een user zelf een afspraak kan inplannen.
+                        Voor de desbetereffende hondenschool gaat dit om een training of om gedragstherapie aan huis.
+                        Alle opties kunnen vanuit de dropdown gekozen worden en er kan een datum en tijd ingevuld
+                        worden.
+                        Voor de rest moeten er nog enkele persoonlijke gegevens worden ingevuld.
+                    </p>
+                    <h4>Read</h3>
+                        <img src="images/read.jpg" alt="Read pagina">
+                        <p>Op een read pagina, oftewel de index haal je de data uit de database en weergeef je
+                            die in een tabel. In dit geval haal ik de afspraken uit de database. Als je ingelogd bent
+                            kan je onder Mijn afspraken jouw gemaakte afspraken inzien, hierbij zie je dus alleen de
+                            afspraken
+                            die
+                            gemaakt zijn met het ingelogde account. Echter kan de admin alle afspraken inzien met zijn
+                            eigen
+                            login.
+                        </p>
+                        <h4>Update</h3>
+                            <video controls width="250">
+                                <source src="images/Update.mp4">
+                            </video>
+                            <p>Met de update pagina kan je de data uit de database updaten. Dit betekent dus dat je
+                                de data die opgeslagen staat in de database kan aanpassen. Allereerst wordt in het form
+                                de data
+                                die in de database is opgeslagen teruggeplaatst waarna je het kan veranderen. Na op de
+                                submit knop
+                                gedrukt
+                                te hebben wordt de nieuwe data naar de database gestuurd en wordt de vorige data
+                                vervangen. Dit heb
+                                ik in mijn
+                                systeem gebruikt voor het aanpassen van de gemaakte afspraken. </p>
+                            <h4>Delete</h3>
+                                <video controls width="250">
+                                    <source src="images/Delete - Trim.mp4">
+                                </video>
+                                <p>De delete pagina zorgt ervoor dat je afspraken uit het systeem kunt verwijderen.
+                                    Zodra
+                                    je op delete klikt wordt je doorgestuurd naar de delete.php file (dit is niet
+                                    zichtbaar op de
+                                    website),
+                                    waarna hij de code doorloopt en vervolgens de afspraak uit de database en uit de
+                                    afsprakenlijst
+                                    verwijdert.
+                                </p>
+                                <h4>Login</h3>
+                                    <video controls width="250">
+                                        <source src="images/Login.mp4">
+                                    </video>
+                                    <p>Op de website kan je zelf een account aanmaken waar je vervolgens mee kan
+                                        inloggen om
+                                        een afspraak te kunnen maken. Alleen als je ingelogd bent kun je daarna je
+                                        afspraken en je
+                                        gegevens inzien. Als je ingelogd bent verandert de login knop in de header naar
+                                        een logout knop
+                                        en komt daarnaast een dropdown met jouw profiel.
+                                    </p>
+            </div>
+
+        </section>
+        <!-- Begin Section -->
+        <section class="container">
+            <h2>Eindresultaat</h2>
+            <section class="projectcontainer">
+                <p>Binnenkort is hier de link van de website te vinden!</p>
+            </section>
+        </section>
+    </main>
+    <!-- Begin Footer -->
+    <footer>
+        <h3 id="socials">Socials</h2>
+            <!-- Begin Section -->
+            <section class="social-container">
+                <a class="icons" href="https://www.instagram.com/databaseofdoggos/"><img src="images/Instagram-Logo.png"
+                        class="instagram" alt="Instagram Logo"></a>
+                <a class="icons" href="https://www.etsy.com/nl/shop/Nerdyglazen?ref=seller-platform-mcnav"><img
+                        src="images/Etsy-Logo.png" class="etsy" alt="Etsy Logo"></a>
+                <a class="icons" href="https://www.facebook.com/sharon.dewit.7587/"><img
+                        src="images/Facebook_icon_2013.svg.webp" class="facebook" alt="Facebook Logo"></a>
+            </section>
+    </footer>
+
+</body>
+
+</html>

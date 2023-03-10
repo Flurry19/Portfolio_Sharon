@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  background: url(../images/SkyeWithMe.jpg);
+  background-size: cover;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.bigimageproject {
+  object-fit: cover;
+  /* max-width: 100%; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.bigimageproject2 {
+  object-fit: cover;
+  /* max-width: 100%; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.hometitle {
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  margin-top: 45px;
+  font-family: 'Times New Roman';
+}
+
+.projecttitle {
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  margin-top: 30px;
+  font-family: 'Calibri';
+}
+
+figcaption {
+  font-family: Calibri;
+  font-size: 1em;
+  color: black;
+  font-style: italic;
+}
+
+nav {
+  font-size: 1.3em;
+  display: flex;
+  font-family: 'Franklin Gothic Medium';
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background-color: black;
+  border-right: 1px solid whitesmoke;
+}
+
+nav a:hover {
+  color: black;
+  background-color: white;
+}
+
+.nav-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  text-align: center;
+  z-index: 1;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+  padding: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.projectcontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  margin-left: 50px;
+  font-size: 1.2em;
+  font-family: Calibri;
+}
+
+h1 {
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+  font-family: Calibri;
+}
+
+h2 {
+  font-size: 2em;
+  color: black;
+  font-family: Calibri;
+  font-style: italic;
+}
+
+p {
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  font-family: Calibri;
+  font-size: 1.2em;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(48, 48, 195, 1) 46%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.images-scroll img {
+  object-fit: cover;
+  width: 280px;
+  height: 340px;
+}
+
+.fullimage {
+  position: relative;
+  color: white;
+  width: 280px;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  top: 50%;
+}
+
+.fullimage:hover {
+  transform: scale(1.02);
+  opacity: 0.5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+}
+
+.images-scroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.imagetext {
+  position: absolute;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+
+footer {
+  color: white;
+  padding: 10px;
+  margin-block-end: 40px;
+}
+
+h3 {
+  font-family: Calibri;
+  font-size: 1.8em;
+  margin-left: 10%;
+  font-style: italic;
+  padding: 10px;
+}
+
+h4 {
+  font-size: 1.8em;
+  font-family: Calibri;
+}
+
+.social-container {
+  padding: 20px;
+  height: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons:hover {
+  opacity: 0.7;
+}
+
+.instagram {
+  height: 50px;
+  width: 90px;
+}
+
+.etsy {
+  height: 45px;
+  width: 45px;
+  border-radius: 20%;
+}
+
+.facebook {
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
+  border-radius: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hometitle {
+    font-size: 2.5em;
+    margin-top: 80px
+  }
+
+  .projecttitle {
+    margin-top: 0px;
+  }
+
+  #home {
+    width: 100%;
+    height: 100vw;
+  }
+
+  nav {
+    font-size: 0.9em;
+    margin-top: 0px;
+  }
+
+  nav a {
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+  }
+
+  nav a:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .nav-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  p {
+    padding: 0px;
+  }
+
+  .container {
+    padding: 20px;
+
+  }
+
+  .fullimage {
+    width: 250px;
+  }
+
+  .projectcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

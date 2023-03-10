@@ -1,0 +1,73 @@
+.chat-popup {
+    position: fixed;
+    color: black;
+    bottom: 15px;
+    right: 20px;
+    font-size: 1.3em;
+    transform: translateY(100px);
+    animation: show-chat 3s ease-out forwards;
+    z-index: 3;
+}
+
+.open-button {
+    background: rgb(0, 27, 133);
+    background: radial-gradient(circle, rgba(0, 27, 133, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    padding: 10px;
+    bottom: 15px;
+    right: 20px;
+    width: 120px;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+label {
+    font-size: 0.7em;
+}
+
+.form-container {
+    max-width: 200px;
+    padding: 10px;
+    background: rgb(39, 150, 244);
+    background: radial-gradient(circle, rgba(39, 150, 244, 1) 0%, rgba(0, 64, 140, 1) 100%);
+}
+
+textarea {
+    width: 100%;
+}
+
+.close {
+    background-color: rgb(243, 112, 112);
+
+}
+
+.submit {
+    background-color: rgb(118, 236, 124);
+}
+
+.submit:hover,
+.close:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+chat>div {
+    animation: pulse 1s ease-out;
+}
+
+@keyframes show-chat {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
